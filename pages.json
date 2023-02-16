@@ -1,0 +1,115 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "社交媒体",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/games/games",
+			"style": {
+				"navigationBarTitleText": "小游戏"
+			}
+		},
+		{
+			"path": "pages/record/record",
+			"style": {
+				"navigationBarTitleText": "记录"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "关于App"
+			}
+		},
+		{
+			"path": "pages/games/Dice",
+			"style": {
+				"navigationBarTitleText": "摇色子"
+			}
+		},
+		{
+			"path": "pages/games/FingerGuessing",
+			"style": {
+				"navigationBarTitleText": "猜拳"
+			}
+		},
+		{
+			"path": "pages/games/RussianRoulette",
+			"style": {
+				"navigationBarTitleText": "俄罗斯轮盘",
+				"navigationBarBackgroundColor": "#b9a046"
+			}
+		},
+		{
+			"path": "pages/games/DigitalBomb",
+			"style": {
+				"navigationBarTitleText": "数字炸弹"
+			}
+		},
+		{
+			"path": "pages/games/CrocoDile",
+			"style": {
+				"navigationBarTitleText": "鳄鱼拔牙"
+			}
+		},
+		{
+			"path": "pages/games/xoxo",
+			"style": {
+				"navigationBarTitleText": "XOXO"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007aff",
+		"enablePullDownRefresh": false,
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar" : {
+		"selectedColor":"#007aff",
+		"color":"#a5a5a5",
+		"backgroundColor":"#fff",
+		"borderStyle":"#e8e8e8",
+		"list":[
+			{
+				"iconPath":"static/icon/socialMedia.png",
+				"selectedIconPath":"static/icon/socialMedia_active.png",
+				"pagePath":"pages/index/index",
+				"text":"社交媒体"
+			},
+			{
+				"iconPath":"static/icon/games.png",
+				"selectedIconPath":"static/icon/games_active.png",
+				"pagePath":"pages/games/games",
+				"text":"游戏"
+			},
+			{
+				"iconPath":"static/icon/record.png",
+				"selectedIconPath":"static/icon/record_active.png",
+				"pagePath":"pages/record/record",
+				"text":"记录"
+			},
+			{
+				"iconPath":"static/icon/user.png",
+				"selectedIconPath":"static/icon/user_active.png",
+				"pagePath":"pages/my/my",
+				"text":"关于App"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "pages/index/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
